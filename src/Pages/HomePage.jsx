@@ -21,7 +21,7 @@ const HomePage = () => {
       <section className="relative min-h-[650px] flex items-center bg-slate-900 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={HeroImg2}
+            src={HeroImg}
             alt="London Background"
             className="w-full h-full object-cover opacity-40"
           />
