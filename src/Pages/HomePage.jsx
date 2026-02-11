@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link} from 'react-router-dom'
 import { motion } from 'framer-motion';
 import HeroImg from '../assets/HeroImg.jpg';
 import HeroImg2 from '../assets/HeroImg2.jpg';
+import HeroImage from '../assets/HeroImage.jpg';
 import {
   Truck,
   Home as HomeIcon,
@@ -21,7 +23,7 @@ const HomePage = () => {
       <section className="relative min-h-[650px] flex items-center bg-slate-900 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={HeroImg}
+            src={HeroImg2}
             alt="London Background"
             className="w-full h-full object-cover opacity-40"
           />
@@ -48,9 +50,11 @@ const HomePage = () => {
               Professional Van Delivery, Home Removals & Logistics <br className="hidden md:block" />
               Services Across London and Beyond.
             </p>
-            <button className="bg-[#98D63D] text-black text-sm md:text-lg sm:text-lg px-6 md:px-8 py-3 md:py-4 rounded-md font-black hover:bg-black hover:text-white transition-all shadow-xl uppercase italic">
+            <Link 
+              to="/contact"
+              className="bg-[#98D63D] text-black text-sm md:text-lg sm:text-lg px-6 md:px-8 py-3 md:py-4 rounded-md font-black hover:bg-black hover:text-white transition-all shadow-xl uppercase italic">
               Contact Us
-            </button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -156,9 +160,9 @@ const HomePage = () => {
                 </div>
               ))}
             </div>
-            <button className="bg-[#98D63D] text-black px-8 py-4 rounded-md font-black shadow-lg hover:bg-black hover:text-white transition-all uppercase italic">
+            <Link to="/services" className="bg-[#98D63D] text-black px-8 py-4 rounded-md font-black shadow-lg hover:bg-black hover:text-white transition-all uppercase italic">
               View Our Services
-            </button>
+            </Link>
           </motion.div>
 
           {/* Right: Testimonial Card */}
